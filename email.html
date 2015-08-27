@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Really Simple HTML Email Template</title>
+<style>
+/* -------------------------------------
+		GLOBAL
+------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.6;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+	width: 100%!important;
+	height: 100%;
+}
+
+
+/* -------------------------------------
+		ELEMENTS
+------------------------------------- */
+a {
+	color: #348eda;
+}
+
+.btn-primary {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #6c7f14;
+	border: solid #6c7f14;
+	border-width: 10px 20px;
+	line-height: 2;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+.btn-secondary {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #aaa;
+	border: solid #aaa;
+	border-width: 10px 20px;
+	line-height: 2;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+.last {
+	margin-bottom: 0;
+}
+
+.first {
+	margin-top: 0;
+}
+
+.padding {
+	padding: 10px 0;
+}
+
+
+/* -------------------------------------
+		BODY
+------------------------------------- */
+table.body-wrap {
+	width: 100%;
+	padding: 20px;
+}
+
+table.body-wrap .container {
+	border: 1px solid #f0f0f0;
+}
+
+
+/* -------------------------------------
+		FOOTER
+------------------------------------- */
+table.footer-wrap {
+	width: 100%;	
+	clear: both!important;
+}
+
+.footer-wrap .container p {
+	font-size: 12px;
+	color: #666;
+	
+}
+
+table.footer-wrap a {
+	color: #999;
+}
+
+
+/* -------------------------------------
+		TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #000;
+	margin-top: 40px;
+	line-height: 1.2;
+	font-weight: 200;
+}
+
+h1 {
+	font-size: 36px;
+	color: #6C7F14;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 22px;
+}
+p {
+	margin-top: 10px;
+}
+p, ul, ol {
+	margin-bottom: 10px;
+	font-weight: normal;
+	font-size: 14px;
+}
+ul {
+	margin-left: 20px;
+}
+ul li, ol li {
+	margin-left: 5px;
+	list-style-position: inside;
+}
+
+/* ---------------------------------------------------
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+	display: block!important;
+	max-width: 600px!important;
+	margin: 0 auto!important; /* makes it centered */
+	clear: both!important;
+}
+
+/* Set the padding on the td rather than the div for Outlook compatibility */
+.body-wrap .container {
+	padding: 20px;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+	max-width: 600px;
+	margin: 0 auto;
+	display: block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+	width: 100%;
+}
+
+</style>
+</head>
+
+<body bgcolor="#f6f6f6">
+
+<!-- body -->
+<table class="body-wrap" bgcolor="#f6f6f6">
+	<tr>
+		<td></td>
+		<td class="container" bgcolor="#FFFFFF">
+
+			<!-- content -->
+			<div class="content">
+			<table>
+				<tr>
+					<td>
+						<h1>Rough Draft! v3</h1>
+						<p>&nbsp;</p>
+						<h1 align="center">2015 GridIron DevOps Hackathon</h1>
+						<h3 align="center" style="margin-top: 10px">An Internal Booz Allen Hackathon</h3>
+						<hr>
+						<p>&nbsp;</p>
+						<p>SIG Digital invites you to participate the our GridIron DevOps hackathon where you will learn and practice the DevOps methodology by using automated tools to achieve continual integration and deployment of an existing application.</p>
+						<p>&nbsp;</p>
+						<img src="http://i.imgur.com/s4oqmSj.png" style="background-color:#000000; display:block; padding: 0 5px; margin: 15px;" width="550px"/> <!-- TODO: Make responsive -->
+						<p>&nbsp;</p>
+						<!-- <p>By participating in the hackathon, you will be putting your DevOps skills to the test in a realistic environment. You will be able to strengthen your DevOps skills and get experience in this increasingly important and in–demand discipline. Help set the groundwork for Booz Allen (and by extension, yourself) to be acknowledged by leaders in the DevOps community.</p> -->
+						<h1>Challenge Overview</h1>
+						<p>You will be tasked with challenges to show off your understanding of DevOps and applying these concepts in a team. For each challenge, your team will be awarded points upon successful demonstration of your solution.</p>
+						<p>This hackathon is not to see who can build the best application, but to see who can achieve the most effective DevOps solution to support an existing application. Each team will be provided with a preconfigured AWS environment that has many of the components of the application in&#8211;place. The focus will be on integrating undeveloped pieces of this environment into a full DevOps solution.</p>
+<!-- 						<p>You will be tasked with a series of challenges which will test your understanding of advanced DevOps and ability to apply these concepts in a team.  For each challenge, your team will be awarded points upon successful demonstration of your solution.</p>
+ -->					<h2>Exercises</h2>
+						<p>The exercises for this hackathon are grouped according to the CAMS DEVOPS methodology, which stands for Culture, Automation, Measurement, and Sharing.  Each exercise will have instructions to complete and will also include a few open&#8211;ended questions to help teams expand on the solution for differentiation.</p>
+						<h1>Schedule</h1>
+						<p><strong>Date&#58; Saturday October, 3rd</strong></p>
+						<p><strong>Location&#58; Hamilton Building 2010, 2011, 2014</strong></p>
+						<p> 08&#58;00 AM Welcome by Haluk and Breakfast </p>
+						<p> 08&#58;15 AM Build your DevOps playbooks</p>
+						<p> 08&#58;30 AM Coding Begins!</p>
+						<p> 11&#58;15 AM Lunch and Networking</p>
+						<p> 06&#58;00 PM Dinner</p>
+						<p> 08&#58;15 PM Coding Ends, Final Presentations Begin</p>
+						<p> 08&#58;30 PM Judges Deliberate</p>
+						<p> 09&#58;00 PM Award Ceremony</p>
+						<h1>Prizes</h1>
+						<p><strong>1st Prize&#58;</strong> $500 Amazon Gift Card per team member</p>
+						<p><strong>2nd Prize&#58;</strong> $300 Amazon Gift Card per team member</p>
+						<p><strong>3rd Prize&#58;</strong> $100 Amazon Gift Card per team member</p>
+						<h1>Judging</h1>
+						<p>You will be observed throughout the Hackathon by DevOps SMEs for each of the ACAMS principles.</p>
+						<p>At the conclusion of the Hackathon, each team will present their final product to a panel comprised of the five SMEs.</p>
+						<p>Submissions will be scored at the end of the competition on the following criteria&#58;</p>
+						<ul>
+							<p><strong>Culture&#58; (2 exercises, 20 points)</strong></p>
+							<li>Open Source Code Management (2 exercises, 20 points)</li>
+							<p><strong>Automation&#58; (5 exercises, 50 points)</strong></p>
+							<li>Infrastructure&#8211;As&#8211;Code (3 exercises, 30 points)</li>
+							<li>Continuous Deployment (2 exercises, 20 points)</li>
+							<p><strong>Monitoring&#58; (2 exercises, 20 points)</strong></p>
+							<li>Dashboard / reporting (1 exercise, 10 points)</li>
+							<li>Unified Logging (1 exercise, 10 points)</li>
+							<p><strong>Sharing&#58; (1 exercise, 10 points)</strong></p>
+							<li>Communication / Chap Ops (1 exercise, 10 points)</li>
+						</ul>
+						<p>A panel of judges will review each of the submissions and the average score will be recorded for each team. Judges will be evaluating solutions based on the following criteria&#58; 
+						<p><strong>Applied Concepts&#58;</strong> 20%</p>
+						<p><strong>Innovative Approach&#58;</strong> 20%</p>
+						<p><strong>Playbooks and Plays&#58;</strong> 20%</p>
+						<p><strong>Technical Documentation&#58;</strong> 20%</p>
+						<p><strong>Scalable Approach&#58;</strong> 20%</p>
+						<h1>Rules</h1>
+						<p><strong>Fresh Code Rule</strong></p>
+						<p>All code developed must be FRESH&#8211;that's how we keep everything fair. Before the start of the GridIron DevOps Hackathon, participates must create a playbook for <strong>Reliability</strong> or <strong>Automated Testing</strong> for example. Instructions on how to create a playbook will be provided.</p>
+						<p><strong>Who Owns the IP?</strong></p>
+						<p>The participants with the best playbook will be have it published on GridIron GitHub page with attribution. The winner for Hackathon will have their product presented as a case study for the GridIron initiative.</p>
+						<p></p>
+						<table>
+							<tr>
+								<td class="padding">
+									<p><strong>Space is limited to 10 teams of 4 competitors! Register today!</strong></p>
+									<p><a href="#" class="btn-primary">Register Here</a></p>
+								</td>
+							</tr>
+						</table>
+						<!-- <h2>How do I use it?</h2>
+						<p>All the information you need is on GitHub.</p>
+						<table>
+							<tr>
+								<td class="padding">
+									<p><a href="#" class="btn-primary">View the source and instructions on GitHub</a></p>
+								</td>
+							</tr>
+						</table>
+						<p>Feel free to use, copy, modify this email template as you wish.</p>
+						<p>Thanks, have a lovely day.</p>
+						<p><a href="http://twitter.com/leemunroe">Follow @leemunroe on Twitter</a></p> -->
+					</td>
+				</tr>
+			</table>
+			</div>
+			<!-- /content -->
+			
+		</td>
+		<td></td>
+	</tr>
+</table>
+<!-- /body -->
+
+<!-- footer -->
+<table class="footer-wrap">
+	<tr>
+		<td></td>
+		<td class="container">
+			
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td align="center">
+							<p>Don't like these annoying emails? <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- /content -->
+			
+		</td>
+		<td></td>
+	</tr>
+</table>
+<!-- /footer -->
+
+</body>
+</html>
